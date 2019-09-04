@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    /* overflow: hidden; */
+}
+#fullpage {
+    /* text-align: center; */
+}
+#buttonsBlock {
+    position: absolute;
+    left:10px;
+    width: 40px;
+    height: 100vh;
+    display: inline-block;
+}
+#buttonsBlock .button {
+    background-color: rgb(118, 134, 163);
+    border: 1px solid rgb(53, 53, 53);
+    color: #ffffff;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+.house {
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+    position: relative;
+    left: 80px;
+    width:400px;
+    display: inline-block;
+    text-align: left;
+}
+.house .shaft{
+    border-left: 1px solid rgb(99, 99, 99);
+    border-right: 1px solid rgb(99, 99, 99);
+    position: relative;
+    left:402px;
+    width:44px;
+    display: inline-block;
+    z-index: 2;
+}
+.house .shaft .elevator{
+    position: absolute;
+    top:0px;
+    width: 32px;
+    height:42px;
+    border: 1px solid black;
+    margin: 4px;
+    transition: top;
+    transition-duration: 1s;
+    -webkit-transition: top;
+    -webkit-transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.1,0,.9,1);
+    z-index: 2;
+}
+.house .floor {
+    position: absolute;
+    width:400px;
+    height: 50px;
+    top:0px;
+    border-bottom: 1px solid #cccccc;
+}
+.house .floor .floorSign{
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    left: 412px;
+    color: #cccccc;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.user {
+    padding-top:10px; 
+    position: absolute; 
+    transition: top;
+    transition-duration: 1s;
+    -webkit-transition: top;
+    -webkit-transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.1,0,.9,1);
+    z-index: 4;
+}
+.user .wantFloor{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 12px;
+    font-size: 10px;
+    background-color: #dfdfdf;
+    color: rgb(255, 0, 0);
+    width: 16px;
+    text-align: center;
+    z-index: 10;
+    border-radius: 3px;
+    border: 1px solid black;
+}
