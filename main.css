@@ -4,9 +4,7 @@ body {
     font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
     /* overflow: hidden; */
 }
-#fullpage {
-    /* text-align: center; */
-}
+
 #buttonsBlock {
     position: absolute;
     left:10px;
